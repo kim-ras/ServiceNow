@@ -28,7 +28,7 @@
         <rest_variables/>
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
-	gs.info('Inside Handle SW Uninstall (' + current.operation() + ') : ' + current.software.name + ' ON ' + current.installed_on.name );
+	gs.debug('Inside Handle SW Uninstall (' + current.operation() + ') : ' + current.software.name + ' ON ' + current.installed_on.name );
 	var uninstallRecord = new GlideRecord("x_snc_uninstalled_uninstalled_software");
 	var recordFound = false;
 	
@@ -44,7 +44,7 @@
 	
 	if(current.operation() == "insert") {
 		if (recordFound) {
-			gs.info("-- Delete Uninstall record as it is being reinstalled : " + uninstallRecord.name);
+			gs.info("Delete Uninstall record as it is being reinstalled : " + uninstallRecord.name);
 			if (!uninstallRecord.deleteRecord()) 
 				gs.error("Uninstall Record NOT deleted!");
 		}
@@ -70,7 +70,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9b7aca2edb74e49016e7ad2b139619bb</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Handle Uninstalls</sys_name>
         <sys_overrides/>
         <sys_package display_value="Uninstalled Software" source="x_snc_uninstalled">c2570a66db74e49016e7ad2b13961945</sys_package>
@@ -78,7 +78,7 @@
         <sys_scope display_value="Uninstalled Software">c2570a66db74e49016e7ad2b13961945</sys_scope>
         <sys_update_name>sys_script_9b7aca2edb74e49016e7ad2b139619bb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2020-12-09 13:25:52</sys_updated_on>
+        <sys_updated_on>2020-12-10 08:36:48</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>
