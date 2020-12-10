@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Software Uninstalled" max_length="40" name="x_snc_uninstalled_uninstalled_software" sizeclass="6" type="collection">
+        <element attributes="encode_utf8=false" display="true" label="CI ID" max_length="32" name="ci_id" reference="cmdb_ci_computer" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="200" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Product ID" max_length="32" name="product_id" reference="cmdb_ci_spkg" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Tags" max_length="40" name="tags" type="string"/>
+        <element label="uninstalled" max_length="40" name="uninstalled" type="glide_date_time"/>
+        <index name="index">
+            <element name="ci_id"/>
+        </index>
+        <index name="index2">
+            <element name="product_id"/>
+        </index>
+    </element>
+</database>

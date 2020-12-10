@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Uninstalled Software">c2570a66db74e49016e7ad2b13961945</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>AWS_lab_mid1</sys_created_by>
+        <sys_created_on>2020-12-09 13:33:24</sys_created_on>
+        <sys_id>af4570acdb4928d016e7ad2b1396195d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Glide API: scripting</sys_name>
+        <sys_package display_value="Uninstalled Software" source="x_snc_uninstalled">c2570a66db74e49016e7ad2b13961945</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Uninstalled Software">c2570a66db74e49016e7ad2b13961945</sys_scope>
+        <sys_update_name>sys_scope_privilege_af4570acdb4928d016e7ad2b1396195d</sys_update_name>
+        <sys_updated_by>AWS_lab_mid1</sys_updated_by>
+        <sys_updated_on>2020-12-09 13:33:24</sys_updated_on>
+        <target_name>Glide API: scripting</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>
